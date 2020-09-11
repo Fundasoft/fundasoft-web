@@ -31,6 +31,8 @@
 
 <body>
 
+
+
     <!-- =====================================
     	==== Start Loading -->
 
@@ -56,7 +58,7 @@
         <div class="container">
 
             <!-- Logo -->
-            <a class="logo" href="#">
+            <a class="logo" href="index.html">
                 <img src="img/imagotipo-light.png" alt="logo">
             </a>
 
@@ -69,22 +71,22 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item" id="nosotros">
-                        <a class="nav-link" href="#" data-scroll-nav="1">Nosotros</a>
+                        <a class="nav-link" href="index.html?nosotros">Nosotros</a>
                     </li>
                     <li class="nav-item" id="areas">
-                        <a class="nav-link" href="#" data-scroll-nav="2">&Aacute;reas</a>
+                        <a class="nav-link" href="index.html?areas">&Aacute;reas</a>
                     </li>
                     <li class="nav-item" id="canales">
-                        <a class="nav-link" href="#" data-scroll-nav="3">Canales</a>
+                        <a class="nav-link" href="index.html?canales">Canales</a>
                     </li>
                     <li class="nav-item" id="plataforma">
-                        <a class="nav-link" href="#" data-scroll-nav="4">Plataforma</a>
+                        <a class="nav-link" href="index.html?plataforma">Plataforma</a>
                     </li>
-                    <li class="nav-item" id="servicios">
-                        <a class="nav-link" href="#" data-scroll-nav="5">Servicios</a>
+                    <li class="nav-item" id="comunidad">
+                        <a class="nav-link" href="index.html?comunidad">Comunidad</a>
                     </li>
                     <li class="nav-item" id="contacto">
-                        <a class="nav-link" href="#" data-scroll-nav="6">Contacto</a>
+                        <a class="nav-link" href="index.html?contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -93,50 +95,67 @@
 
     <!-- End Navbar ====
     	======================================= -->
+        <!-- <header>
+            <img src="img/portada-corta.jpg" alt="">
+        </header> -->
 
     <!-- ================================== 
             ==== Start Carousel  -->
-
+<div class="container">
     <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
         <!--Indicators-->
         <ol class="carousel-indicators">
             <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-2" data-slide-to="1"></li>
             <li data-target="#carousel-example-2" data-slide-to="2"></li>
+            <li data-target="#carousel-example-2" data-slide-to="3"></li>
         </ol>
         <!--/.Indicators-->
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
+            
             <div class="carousel-item active">
+                <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="http://lorempixel.com/600/200/technics" alt="Primer imagen">
+                    <img class="d-block w-100" src="img/galeria/slide4-bn.jpg" alt="Tercer imagen">
                     <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h3 class="h3-responsive">Título</h3>
-                    <p>Descripción</p>
+                    <h3 class="h3-responsive">compromiso y creatividad</h3>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="http://lorempixel.com/600/200/technics/" alt="Segunda imagen">
+                    <img class="d-block w-100" src="img/galeria/slide2-bn.jpg" alt="Segunda imagen">
                     <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h3 class="h3-responsive">Título</h3>
-                    <p>Texto descriptivo</p>
+                    <h3 class="h3-responsive">Construyendo futuro</h3>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <!--Mask color-->
                 <div class="view">
-                    <img class="d-block w-100" src="http://lorempixel.com/600/200/technics/" alt="Tercer imagen">
+                    <img class="d-block w-100" src="img/galeria/slide3-bn.jpg" alt="Tercer imagen">
                     <div class="mask rgba-black-light"></div>
                 </div>
                 <div class="carousel-caption">
-                    <h3 class="h3-responsive">Tercer título</h3>
-                    <p>más texto descriptivo</p>
+                    <h3 class="h3-responsive">Desarrollo e innovación</h3>
+                </div>
+            </div>
+
+
+
+            <div class="carousel-item">
+                <div class="view">
+                    <img class="d-block w-100" src="img/galeria/slide1-bn.jpg" alt="Primer imagen">
+                    <div class="mask rgba-black-light"></div>
+                </div>
+                <div class="carousel-caption">
+                    <h3 class="h3-responsive">Conectando ideas</h3>
                 </div>
             </div>
         </div>
@@ -152,7 +171,7 @@
         </a>
         <!--/.Controls-->
     </div>
-
+</div>
 
     <!-- End Carousel ====
         ======================================= -->
@@ -160,39 +179,54 @@
 
     <!-- ================================== 
             ==== Start galeria  -->
+
     <div id="galeria" class="container">
 
         <div class="row">
 
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="img/galeria/1.jpeg" alt="imagen galeria">
+            <div class="col-lg-4 col-md-6 col-sm-12 myImg">
+                <img name="galeria" src="img/galeria/1.jpeg" alt="Vista desde nuestras oficinas">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="img/galeria/2.jpeg" alt="imagen galeria">
+            <div class="col-lg-4 col-md-6 col-sm-12 myImg">
+                <img name="galeria" src="img/galeria/2.jpeg" alt="Área de desarrollo">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="img/galeria/3.jpeg" alt="imagen galeria">
+            <div class="col-lg-4 col-md-6 col-sm-12 myImg">
+                <img name="galeria" src="img/galeria/3.jpeg" alt="Sala de reuniones">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="img/galeria/4.jpeg" alt="imagen galeria">
+            <div class="col-lg-4 col-md-6 col-sm-12 myImg">
+                <img name="galeria" src="img/galeria/4.jpeg" alt="Arte conceptual">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="img/galeria/5.jpeg" alt="imagen galeria">
+            <div class="col-lg-4 col-md-6 col-sm-12 myImg">
+                <img name="galeria" src="img/galeria/5.jpeg" alt="Desarrollo de electrónica">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-                <img src="img/galeria/6.jpeg" alt="imagen galeria">
+            <div class="col-lg-4 col-md-6 col-sm-12 myImg">
+                <img name="galeria" src="img/galeria/6.jpeg" alt="Cartelería">
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12>
-                <img src="img/galeria/7.jpeg" alt="imagen galeria">
-            </div>
+            
 
 
         </div>
 
     </div>
 
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+     
+       <!-- The Close Button -->
+       <span class="close">&times;</span>
+     
+       <!-- Modal Content (The Image) -->
+       <img class="modal-content" id="img01">
+     
+       <!-- Modal Caption (Image Text) -->
+       <div id="caption"></div>
+     </div> 
+     
+
+
     <!-- End galeria ====
         ======================================= -->
+
 
     <!-- =====================================
         ==== Start Footer -->
@@ -222,6 +256,10 @@
 
 
     <!-- jQuery -->
+
+    <!-- galeria scripts -->
+    <script src="js/galeria.js"></script>
+
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
 
@@ -248,6 +286,9 @@
 
     <!-- custom scripts -->
     <script src="js/scripts.js"></script>
+
+    <!-- custom scripts -->
+    <script src="js/redireccionMenu.js"></script>
 
 
 </body>
