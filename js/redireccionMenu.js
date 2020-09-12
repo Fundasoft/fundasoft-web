@@ -11,8 +11,8 @@ window.addEventListener("load", function () {
     else if (destino.indexOf("?canales") > 0){
         document.getElementById("idCanales").scrollIntoView(true);
     }
-    else if (destino.indexOf("?plataforma") > 0){
-        document.getElementById("idPlataforma").scrollIntoView(true);
+    else if (destino.indexOf("?proyectos") > 0){
+        document.getElementById("idProyectos").scrollIntoView(true);
     }
     else if (destino.indexOf("?comunidad") > 0){
         document.getElementById("idComunidad").scrollIntoView(true);
