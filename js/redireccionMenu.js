@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
 
     if (destino.indexOf("?nosotros") > 0) {
         document.getElementById("idNosotros").scrollIntoView(true);
-    } 
+    }
     else if (destino.indexOf("?areas") > 0){
         document.getElementById("idAreas").scrollIntoView(true);
     }
@@ -21,7 +21,8 @@ window.addEventListener("load", function () {
         document.getElementById("idContacto").scrollIntoView(true);
     }
     else{
-        document.getElementById("idHome").scrollIntoView(true);
+      let home = document.getElementById("idHome");
+      if(home)home.scrollIntoView(true);
     }
-    
+
 });
