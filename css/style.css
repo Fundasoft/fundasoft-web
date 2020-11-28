@@ -88,17 +88,16 @@ ul {
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 33px 0;
 }
 
 .section-padding-bottom{
-  padding-top: 50px;
   padding-bottom: 1px;
 }
 
 .section-head {
-  margin-bottom: 80px;
-  padding-bottom: 30px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
   position: relative;
 }
 .section-head:before {
@@ -407,8 +406,8 @@ ul {
 
 .nav-scroll {
   background: #fff;
-  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
   padding: 0;
   position: fixed;
   top: -100px;
@@ -901,6 +900,7 @@ ul {
      [ 13 Start Blog ]
 -----------------------------------------------------------------*/
 .blog .item {
+  background-color: #fff;
   -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -913,7 +913,11 @@ ul {
 .blog .post-img {
   position: relative;
   overflow: hidden;
+  scale: 0.8;
 }
+
+ 
+
 .blog .post-img:hover img {
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -927,7 +931,11 @@ ul {
 }
 .blog .post-cont {
   padding: 30px;
+  padding-top: 0px;
   background-color: #fff;
+}
+.blog .post-areas-cont{
+  height: 285px;
 }
 .blog .post-cont .tag {
   font-size: 12px;
@@ -1070,6 +1078,13 @@ footer p {
   
 }
 
+@media screen and (max-width: 1200px) {
+  .post-areas-cont{
+    height: 5.5rem !important;
+  }
+  
+}
+
 @media screen and (max-width: 991px) {
   .mb-md50 {
     margin-bottom: 50px;
@@ -1149,6 +1164,28 @@ footer p {
     font-size: 25px;
     font-weight: 500;
   }
+
+  .blog .post-img {
+    scale: 0.95;
+  }
+
+  .blog .post-cont{
+    padding: 10px;
+  }
+
+  .post-areas-cont{
+    height: 70px !important;
+  }
+  .blog .ajustar-titulo{
+    font-size: 12px !important;
+    line-height: 1 !important;
+  }
+
+  .blog .padding-5{
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    justify-content: space-around !important;
+  }
 }
 @media screen and (max-width: 767px) {
   .mb-sm50 {
@@ -1185,6 +1222,11 @@ footer p {
 @media screen and (max-width: 480px) {
   .section-head p {
     display: none;
+  }
+
+  .blog .ajustar-titulo{
+    font-size: 9px !important;
+    line-height: 1 !important;
   }
 
 }
@@ -1229,7 +1271,7 @@ footer p {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 16; /* Sit on top */
+  /*z-index: 16; /* Sit on top ******esto hace que el backgroun aparezca por encima del content. por que? */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
