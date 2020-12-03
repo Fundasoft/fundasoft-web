@@ -1174,7 +1174,10 @@ footer p {
   }
 
   .post-areas-cont{
-    height: 70px !important;
+    height: 50px !important;
+    display: flex;
+    align-items: center; 
+    justify-content:center;
   }
   .blog .ajustar-titulo{
     font-size: 12px !important;
