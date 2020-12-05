@@ -1293,6 +1293,12 @@ footer p {
   max-width: 700px;
 }
 
+.modal-content .modal-tittle {
+  font-size: 12px;
+  color: #6db344;
+  margin-bottom: 10px;
+}
+
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
 #caption {
   margin: auto;
