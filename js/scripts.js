@@ -232,3 +232,14 @@ $(window).on("load",function (){
     });
 
 });
+
+/* ----------------------------------------------------------------
+                [ Boton DONA ]
+-----------------------------------------------------------------*/
+
+$(".btn-cbu").hover(function(){
+    $('.dona').addClass('animacionVer');
+  })
+  $(".btn-cbu").mouseleave(function(){
+    $(".dona").removeClass('animacionVer');
+  })

@@ -30,7 +30,10 @@
 	14 Contact
 	15 Clients Logo
 	16 Footer
-	17 Responsive
+  17 Responsive
+  
+
+  20 CBU
  
 
 ---------------------------------------------------------------- */
@@ -1360,3 +1363,36 @@ footer p {
   width:100%;
   position:absolute;
 }
+
+/* ----------------------------------------------------------------
+ 	 [ 20 CBU ]
+-----------------------------------------------------------------*/
+
+.btn-cbu {
+  display:block;
+  height:100px;
+  width:100px;
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  border-radius:50%;
+  line-height:80px;
+  text-align:center;
+  z-index:999;
+}
+
+.btn-cbu:hover{
+  transform:scale(1.1);
+}
+
+.dona {
+  transform:scale(0);
+  background-color: #f1f1f1;
+}
+
+.animacionVer{
+  transform:scale(1);
+}
+/* .btn-cbu:active{
+  transform:scale(1.1);
+} */
