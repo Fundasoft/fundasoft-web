@@ -234,12 +234,9 @@ $(window).on("load",function (){
 });
 
 /* ----------------------------------------------------------------
-                [ Boton DONA ]
+                [ Boton CONTRIBUIR ]
 -----------------------------------------------------------------*/
 
-$(".btn-cbu").hover(function(){
-    $('.dona').addClass('animacionVer');
-  })
-  $(".btn-cbu").mouseleave(function(){
-    $(".dona").removeClass('animacionVer');
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip({trigger : 'hover'})
   })

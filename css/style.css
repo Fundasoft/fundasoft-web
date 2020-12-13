@@ -1380,19 +1380,21 @@ footer p {
   text-align:center;
   z-index:999;
 }
-
+.tooltip {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
 .btn-cbu:hover{
   transform:scale(1.1);
 }
 
-.dona {
-  transform:scale(0);
-  background-color: #f1f1f1;
+@media screen and (max-width: 768px) {
+  .btn-cbu {
+    height:70px;
+    width:70px;
+  }
+  .tooltip{
+    display: none;
+  }
+  
 }
-
-.animacionVer{
-  transform:scale(1);
-}
-/* .btn-cbu:active{
-  transform:scale(1.1);
-} */
