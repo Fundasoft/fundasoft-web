@@ -1395,6 +1395,9 @@ footer p {
   }
   .tooltip{
     display: none;
-  }
-  
+  } 
 }
+
+/* @media all and (hover: none) {
+  .dijitTooltip {display:none !important}
+  } */
